@@ -14,7 +14,7 @@ type CartSummaryProps = {
 const CartSummary = ({ totalAmount }: CartSummaryProps) => {
   const paypalOptions: PaypalOptions = {
     clientId:
-      'ASMU3kWLU42pAQ9bEqC_PKO6YLQ7e4-5KrIwug4qgt9ZBeB3oxG6nBQ5SSbzZ-558dHxbtnYs3TyOwpk',
+      CLIENT_ID,
     intent: 'capture',
     currency: 'USD',
   }
