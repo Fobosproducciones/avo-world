@@ -22,10 +22,5 @@
     "jsx": "preserve"
   },
   "exclude": ["node_modules"],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "components/CartSummary/CartSummary.js"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*js"]
 }
