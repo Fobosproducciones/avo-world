@@ -11,10 +11,12 @@ type CartSummaryProps = {
   totalAmount: number
 }
 
+let env = process.env["CLIENT_ID"];
+
 const CartSummary = ({ totalAmount }: CartSummaryProps) => {
   const paypalOptions: PaypalOptions = {
     clientId:
-      CLIENT_ID,
+      env,
     intent: 'capture',
     currency: 'USD',
   }
