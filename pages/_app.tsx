@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app'
+import Head from 'next/head'
 import 'semantic-ui-css/semantic.min.css'
 import '../global.css'
 
@@ -9,9 +10,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   // Aditional layout
   // Manejar errores - componentDidCatch
   return (
-    <CartProvider>
-      <Component {...pageProps} />
-    </CartProvider>
+    <>
+      <Head>
+        <title>Avo World</title>
+      </Head>
+      <CartProvider>
+        <Component {...pageProps} />
+      </CartProvider>
+    </>
   )
 }
 
